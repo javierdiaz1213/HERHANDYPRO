@@ -111,10 +111,14 @@
                     <div class="contact-form">
                         <h3>Request a Quote</h3>
                         <form>
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <input type="tel" placeholder="Your Phone">
-                            <textarea placeholder="Describe your project" rows="4" required></textarea>
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+                            <label for="email" class="sr-only">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                            <label for="phone" class="sr-only">Your Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" aria-label="Your Phone">
+                            <label for="message" class="sr-only">Describe your project</label>
+                            <textarea id="message" name="message" placeholder="Describe your project" rows="4" required aria-label="Describe your project"></textarea>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
